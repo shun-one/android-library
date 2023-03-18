@@ -61,9 +61,9 @@ public class ChunkedFileUploadRemoteOperation extends UploadFileRemoteOperation 
     private static final String TAG = ChunkedFileUploadRemoteOperation.class.getSimpleName();
     private final boolean onWifiConnection;
 
-    public final int ASSEMBLE_TIME_MIN = 60 * 1000; // 30s
+    public final int ASSEMBLE_TIME_MIN = 30 * 1000; // 30s
     public final int ASSEMBLE_TIME_MAX = 30 * 60 * 1000; // 30min
-    public final int ASSEMBLE_TIME_PER_GB = 3 * 60 * 1000; // 3 min
+    public final int ASSEMBLE_TIME_PER_GB = 10 * 60 * 1000; // 10 min
 
     public ChunkedFileUploadRemoteOperation(String storagePath,
                                             String remotePath,
